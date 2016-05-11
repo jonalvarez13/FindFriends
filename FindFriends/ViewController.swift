@@ -8,8 +8,13 @@
 
 import UIKit
 import MapKit
+import Firebase
 
 class ViewController: UIViewController, MKMapViewDelegate {
+    
+    // Create a reference to a Firebase location
+    var myRootRef = Firebase(url:"https://findfriendz.firebaseio.com")
+    
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var ChangeView: UISegmentedControl!
